@@ -32,7 +32,7 @@ function App() {
     async function loadDefaultFolder() {
       const { invoke } = await import("@tauri-apps/api/core");
       try {
-        const folder = await invoke<string>("get_default_sync_folder");
+        const folder = await invoke<string>("get_default_sync_folder_cmd");
         setSyncFolder(folder);
       } catch (error) {
         console.error("Failed to get default folder:", error);
