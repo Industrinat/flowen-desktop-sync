@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 node_modules/
 target/
+node_modules/
+target/
